@@ -3,7 +3,7 @@ express = require 'express'
 bodyParser = require 'body-parser'
 app = express()
 
-PORT = 3000
+PORT = process.env.port or 3000
 
 app.use bodyParser.json()
 
