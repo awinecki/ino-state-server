@@ -8,7 +8,8 @@ PORT = process.env.PORT or 3000
 app.use bodyParser.json()
 
 state =
-  deploying: false
+  deploying_prod: false
+  deploying_stage: false
   errors: []
 
 app.get '/state', (req, res) ->
